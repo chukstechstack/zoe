@@ -5,6 +5,7 @@ import authRouter from "./Routes/authRoute.js";
 const mainRouter = express.Router();
 
 mainRouter.use("/tasks", taskRouter);
-mainRouter.use("/users", authRouter);
+mainRouter.use("/", authRouter);
+
 
 export default mainRouter
